@@ -8,7 +8,7 @@
     }
   },
   "profiles": {
-    "BulkuBookWeb": {
+    "BulkyBookWeb": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
