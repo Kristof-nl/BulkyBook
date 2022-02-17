@@ -48,7 +48,6 @@ namespace BulkyBook.DataAccess.Repository
             IQueryable<T> query = dbSet;
 
             query = query.Where(filter);
-
             if (includeProperties != null)
             {
                 foreach (var includeProp in includeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
@@ -56,9 +55,8 @@ namespace BulkyBook.DataAccess.Repository
                     query = query.Include(includeProp);
                 }
             }
-
             return query.FirstOrDefault();
-        }
+        }   
 
         public void Remove(T entity)
         {
